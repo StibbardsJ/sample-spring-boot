@@ -14,7 +14,7 @@ pipeline {
                 docker { image 'busybox' }
             }
             steps {
-                gradle build sonarqube
+                sh './gradlew clean sonarqube'
             }
         }
         stage('docker build') {
