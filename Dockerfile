@@ -6,7 +6,7 @@ LABEL version=1.0
 
 USER root
 
-ENV APP_LOC="/usr/src/app"
+ARG APP_LOC="/usr/src/app"
 
 WORKDIR $APP_LOC
 
